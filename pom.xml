@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ptm-ms</groupId>
-	<artifactId>ptm-cloud-config-server</artifactId>
+	<artifactId>ptm-config-server</artifactId>
 	<version>1.0</version>
 	<name>ptm-cloud-config-server</name>
 	<description>config-server-ms spring boot project</description>
