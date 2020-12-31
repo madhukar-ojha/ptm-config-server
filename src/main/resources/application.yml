@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config-server
+  cloud:    config:      server:        native:          search-locations: classpath:/common-config
+                    
+  profiles:
+    active: native
+server:
+  port: 8888
+eureka:
+  client:
+    register-with-eureka: true     
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://host.docker.internal:8761/eureka}
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+    hostname: localhost
