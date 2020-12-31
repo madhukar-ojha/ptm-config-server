@@ -3,7 +3,7 @@ eureka:
     register-with-eureka: true     
     fetch-registry: true
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://host.docker.internal:8762/eureka}
+      defaultZone: ${EUREKA_URI:http://host.docker.internal:8761/eureka}
   instance:
     leaseRenewalIntervalInSeconds: 10
     metadataMap:
