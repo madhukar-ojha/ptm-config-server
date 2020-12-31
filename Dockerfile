@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM openjdk:8
 ADD target/config-server.jar config-server.jar
 COPY ./target/config-server.jar .
 WORKDIR .
