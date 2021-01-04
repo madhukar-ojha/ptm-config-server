@@ -8,7 +8,7 @@
 		<version>2.3.7.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>ptm-ms</groupId>
+	<groupId>ptm-microservices</groupId>
 	<artifactId>ptm-config-server</artifactId>
 	<version>1.0</version>
 	<name>ptm-cloud-config-server</name>
